@@ -29,7 +29,7 @@ func main() {
 	var critical int = 90
 
 	DefaultConfigfile := "/etc/golang-monitor.yml"
-	ConfigFile := flag.String("f", DefaultConfigfile, fmt.Sprintf("Configig file path, default = %s", DefaultConfigfile))
+	ConfigFile := flag.String("f", DefaultConfigfile, fmt.Sprintf("Config file path, default = %s", DefaultConfigfile))
 	flag.Parse()
 
 	CFG, err := ioutil.ReadFile(*ConfigFile)
